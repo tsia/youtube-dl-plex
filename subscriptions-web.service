@@ -1,0 +1,15 @@
+[Unit]
+Description=subscriptions web interface
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -u /usr/local/scripts/youtube/subscriptions-web.py 8080
+WorkingDirectory=/usr/local/scripts/youtube/
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
