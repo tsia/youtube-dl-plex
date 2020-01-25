@@ -11,3 +11,5 @@ this script downloads to `/storage/plex/media/youtube/` and deletes old files af
 you may need to change the path to `youtube-dl` in `youtube-dl.sh`
 
 Subscription URLs can be Youtube Channel URLs or any other URL that is supported by `youtube-dl`
+
+Subscription Web Interface is listening on Port 8080 by default. Can be changed in `subscription-web.service`
